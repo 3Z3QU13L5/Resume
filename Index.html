@@ -3,23 +3,39 @@
 <head>
   <title>Miguel Solano's Resume</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="styleSheet.css">
 </head>
 <body>
   <header>
-    <div>
-      <nav>
-        <ul style="list-style-type: none; margin: 0; padding: 0;">
-          <li><a href="#nowhere" title="Lorum ipsum dolor sit amet">Lorem</a></li>
-          <li><a href="#nowhere" title="Aliquam tincidunt smauriss">Aliquam</a></li>
-          <li><a href="#nowhere" title="Morbi in sem quis sornares">Morbi</a></li>
-          <li><a href="#nowhere" title="Praesent dapibus, neque id">Praesent</a></li>
-          <li><a href="#nowhere" title="Pellentesque fermentum dol">Pellentesque</a></li>
-        </ul>
-      </nav>
+    <div id="navBar">
+      <div>
+        <nav>
+          <ul class="navBar__ul">
+            <li class="navBar__list navBar__list--active">
+              <a href="#nowhere" title="Home">Home</a>
+            </li>
+            <li class="navBar__list">
+              <a href="#nowhere" title="Professional">Professional</a>
+            </li>
+            <li class="navBar__list">
+              <a href="#nowhere" title="Experience">Experience</a>
+            </li>
+            <li class="navBar__list">
+              <a href="#nowhere" title="Awards">Awards</a>
+            </li>
+            <li class="navBar__list">
+              <a href="#nowhere" title="Interest">Interest</a>
+            </li>
+            <li class="navBar__list">
+              <a href="#nowhere" title="Contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
   <div id="bodyResume">
-    <ul style="list-style: none">
+    <ul>
       <li>
         <section id="home">
           <div class="home__right home__parallax">
