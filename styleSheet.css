@@ -129,6 +129,50 @@ ul {
   margin: 0;
 }
 
+.home__left{
+  background-color: #333;
+  color: var(--white_100);
+  height: 100%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  width: 25%;
+}
+
+.home__profilePicture{
+  border-radius: 50%; 
+  margin: 5% 0 0 30%;
+  overflow: hidden;
+  width: 40%
+}
+
+.home__profileName > h2{
+  font-size: calc(1em + 0.8vw);
+}
+
+.home__profilePicture > img {
+  width: 100%
+}
+
+.home__network{
+  margin: 5% 0 5% 0;
+}
+
+.home__downloadCV{
+  font-size: calc(0.1em + 1vw);
+  display: inline;
+}
+
+.network{
+  display: inline-flex;
+}
+
+.network > li{
+  margin: 10% 3 10% 3;
+}
+
+
+
 @media only screen and (max-width: 768px) {
   .navBar__sidebarBtn,
   .navBar__list__closeBtn,
