@@ -10,7 +10,7 @@ ul {
   background-color: #333;
 }
 
-#navBar > div{
+#navBar > nav{
   position: absolute;
   top: 0;
   width: fit-content;
@@ -44,8 +44,66 @@ ul {
 .navBar__list--active > a{
   color: #4CAF50;
 }
+.navBar__list__closeBtn{
+  color: #818181;
+  display: none;
+  padding: 5px 5px 0px 0px;
+  text-align: right;
+  text-decoration: none;
+}
 
 #bodyResume {
   position: relative;
   top :5%;
+}
+.navBar__btn{
+  background-color: #111;
+  border: none;
+  color: #fff;
+  display: none;
+  font-size: calc(1em + 3.5vw);
+}
+
+.navBar__sidebarBtn{
+  height: 6.795%;
+  position: fixed;
+  width: 12.08%;
+  left: 0;
+  top: 0;
+  opacity: 0.7;
+}
+
+@media only screen and (max-width: 768px) {
+  .navBar__sidebarBtn,
+  .navBar__list__closeBtn,
+  .navBar__btn{
+    display: block;
+  }
+  #navBar{
+    height: 100%;
+    left: 0;
+    overflow-x: hidden;
+    position: fixed;
+    top: 0;
+    transition: 0.5s;
+    width: 50%;
+    z-index: 1;
+  }
+  .navBar__list {
+    width: 100%;
+  }
+  .navBar__list > a{
+    display: block;
+    font-size: calc(1em + 2vw);
+    padding: 8px 8px 8px 32px;
+    text-align: left;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  .navBar__list__closeBtn .navBar__btn{
+    background-color: inherit;
+    color: inherit;
+    margin-left: 82%;
+  }
+  
 }
