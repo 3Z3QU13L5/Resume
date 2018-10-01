@@ -205,5 +205,40 @@ ul {
     color: inherit;
     margin-left: 82%;
   }
+
+  #bodyResume{
+    top: 0;
+  }
+
+  .home__right{
+    display: none;
+  }
+
+  .home__left{
+    width: 100%;
+  }
+
+  .home__profilePicture{
+    margin: 5% 0 0 35%;
+    width: 30%;
+  }
+
+  .home__profileName{
+    font-size: calc(1em + 2vw);
+  }
+
+  .home__academic{
+    font-size: calc(0.7em + 1.5vw)
+  }
+
+  .home__network{
+    font-size: calc(0.8em + 0.9vw);
+    margin: 5% 0 3% 0;
+  }
+
+  .home__downloadCV {
+    font-size: calc(0.6em + 1.3vw);
+    display: inline;
+  }
   
 }
