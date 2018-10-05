@@ -17,6 +17,11 @@ header{
   z-index: 1;
 }
 
+section{
+  position: relative;
+  width: 100%;
+}
+
 ul { 
   list-style-type: none;
   margin: 0;
@@ -96,9 +101,7 @@ ul {
 }
 
 #home{
-  height: 70%;
-  position: relative;
-  width: 100%;
+  padding-bottom: 45%;
 }
 
 .home__right{
@@ -121,7 +124,7 @@ ul {
   font-size: calc(0.8em + 1vw);
   left: 5%;
   position: inherit;
-  top: 50%;  
+  top: 40%;  
 }
 
 .home__greeting > p,
@@ -141,21 +144,27 @@ ul {
 
 .home__profilePicture{
   border-radius: 50%; 
-  margin: 5% 0 0 30%;
+  margin: 5% 0 10% 30%;
   overflow: hidden;
   width: 40%
 }
 
-.home__profileName > h2{
-  font-size: calc(1em + 0.8vw);
+.home__profileName{
+  font-size: calc(0.5em + 0.8vw);
+  margin: 10% 0 10% 0;
 }
 
 .home__profilePicture > img {
   width: 100%
 }
 
+.home__academic{
+  font-size: calc(0.1em + 0.9vw);  
+  margin: 10% 0 10% 0;  
+}
+
 .home__network{
-  margin: 5% 0 5% 0;
+  margin: 10% 0 10% 0;
 }
 
 .home__downloadCV{
@@ -169,6 +178,14 @@ ul {
 
 .network > li{
   margin: 5% 6px 0% 6px;
+}
+
+.network__icon{
+  width: calc(0.6em + 1.2vw);
+}
+
+.network__icon > img{
+  width: 100%;
 }
 
 
@@ -208,6 +225,10 @@ ul {
 
   #bodyResume{
     top: 0;
+  }
+
+  #home {
+    height: 90%;
   }
 
   .home__right{
