@@ -145,5 +145,15 @@ ul {
     color: inherit;
     margin-left: 82%;
   }
+
+  .navBar__CVbtn {
+    font-size: calc(0.6em + 2vw);
+    height: 6%;
+    left: 50%;
+    right: unset;
+    top: 90%;
+    transform: translateX(-50%);
+    width: 55%;
+  }
   
 }
