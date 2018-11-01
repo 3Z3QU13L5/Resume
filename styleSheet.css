@@ -16,7 +16,7 @@ ul {
   background-color: #333;
 }
 
-.nav__bgPicture {
+.navBar__bgPicture {
   background-color: #111;
   color: #fff;
   height: 100%;
@@ -24,7 +24,7 @@ ul {
   width: 15%;
 }
 
-.nav__pPicture {
+.navBar__profilePic {
   border-radius: 50%;
   height: 90%;
   left: 10%;
@@ -32,7 +32,7 @@ ul {
   top: 5%;
 }
 
-.nav__bgPicture > p {
+.navBar__bgPicture > p {
   margin: unset;
   left: 5.5vw;
   position: absolute;
@@ -129,20 +129,20 @@ ul {
     z-index: 1;
   }
 
-  .nav__bgPicture {
+  .navBar__bgPicture {
     height: 25%;
     width: 100%;
     z-index: 1;
   }
 
-  .nav__pPicture {
+  .navBar__profilePic {
     border-radius: 50%;
     height: 60%;
     left: 50%;
     transform: translateX(-50%);
   }
 
-  .nav__bgPicture > p {
+  .navBar__bgPicture > p {
     font-size: calc(1em + 2vw);
     left: 50%;
     text-align: center;
