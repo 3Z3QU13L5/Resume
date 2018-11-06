@@ -1,4 +1,12 @@
-html{
+:root {
+  --white__100: #fff;
+  --soft__grey: rgba(129, 129, 129, 1);
+  --half__grey: rgba(50, 50, 50, 1);
+  --dark__grey: rgba(17, 17, 17, 1);
+  --light__green: rgba(76, 175, 80, 1);
+}
+
+html {
   font-size: calc(0.7em + 0.5vw);
 }
 
@@ -13,35 +21,38 @@ ul {
   /*25px for the padding and  0.7em + 0.5vw goes for the font-size on 'navBar__list > a'*/
   height: calc(26px + 0.7em + 0.5vw);
   top: 0;
-  background-color: #333;
+  background-color: var(--half__grey);
+  z-index: 2;
 }
 
 .navBar__bgPicture {
-  background-color: #111;
-  color: #fff;
+  background-color: var(--dark__grey);
+  color: var(--white__100);
   height: 100%;
-  position: absolute;
+  position: relative;
   width: 15%;
 }
 
 .navBar__profilePic {
   border-radius: 50%;
   height: 90%;
-  left: 10%;
+  left: 7%;
   position: absolute;
   top: 5%;
 }
 
 .navBar__bgPicture > p {
+  background-color: inherit;
   margin: unset;
-  left: 5.5vw;
+  left: 5vw;
+  padding: 0 3%;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
 }
 
 .navBar__ul {
-  background-color: #333;
+  background-color: var(--half__grey);
   height: 100%;
   left: 50%;
   margin: 0;
@@ -58,7 +69,7 @@ ul {
 }
 
 .navBar__list > a {
-  color: white;
+  color: var(--white__100);
   display: block;
   padding: 12px 16px;
   text-align: center;
@@ -66,11 +77,11 @@ ul {
 }
 
 .navBar__list > a:hover {
-  background-color: #111;
+  background-color: var(--dark__grey);
 }
 
 .navBar__list--active > a {
-  color: #4CAF50;
+  color: var(--light__green);
 }
 
 #bodyResume {
@@ -78,15 +89,15 @@ ul {
   margin-top: 5%;
 }
 .navBar__btn {
-  background-color: #111;
+  background-color: var(--dark__grey);
   border: none;
-  color: #fff;
+  color: var(--white__100);
   display: none;
   font-size: calc(1em + 3.5vw);
 }
 
 .navBar__closeBtn {
-  color: #818181;
+  color: var(--soft__grey);
   position: absolute;
   right: 3%;
   display: none;
@@ -125,7 +136,7 @@ ul {
     position: fixed;
     top: 0;
     transition: 0.5s;
-    width: 50%;
+    width: 55%;
     z-index: 1;
   }
 
@@ -143,7 +154,7 @@ ul {
   }
 
   .navBar__bgPicture > p {
-    font-size: calc(1em + 2vw);
+    font-size: calc(0.9em + 2vw);
     left: 50%;
     text-align: center;
     top: 70%;
@@ -162,7 +173,7 @@ ul {
 
   .navBar__list > a {
     display: block;
-    font-size: calc(1em + 2vw);
+    font-size: calc(1em + 1.8vh);
     padding: 0 8px 8px 32px;
     text-align: left;
     text-decoration: none;
