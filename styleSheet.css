@@ -1,9 +1,9 @@
 :root {
-  --white-100: #fff;
-  --soft-grey: rgba(129, 129, 129, 1);
-  --half-grey: rgba(50, 50, 50, 1);
-  --dark-grey: rgba(17, 17, 17, 1);
-  --light-green: rgba(76, 175, 80, 1);
+  --on__primary: #fff;
+  --light__primary: rgba(129, 129, 129, 1);
+  --primary: rgba(50, 50, 50, 1);
+  --dark__primary: rgba(17, 17, 17, 1);
+  --secondary: rgba(76, 175, 80, 1);
 }
 
 html {
@@ -21,13 +21,13 @@ ul {
   /*25px for the padding and  0.7em + 0.5vw goes for the font-size on 'navBar__list > a'*/
   height: calc(26px + 0.7em + 0.5vw);
   top: 0;
-  background-color: var(--half-grey);
+  background-color: var(--primary);
   z-index: 2;
 }
 
 .navBar__bgPicture {
-  background-color: var(--dark-grey);
-  color: var(--white-100);
+  background-color: var(--dark__primary);
+  color: var(--on__primary);
   height: 100%;
   position: relative;
   width: 15%;
@@ -52,7 +52,7 @@ ul {
 }
 
 .navBar__ul {
-  background-color: var(--half-grey);
+  background-color: var(--primary);
   height: 100%;
   left: 50%;
   margin: 0;
@@ -69,7 +69,7 @@ ul {
 }
 
 .navBar__list > a {
-  color: var(--white-100);
+  color: var(--on__primary);
   display: block;
   padding: 12px 16px;
   text-align: center;
@@ -77,11 +77,11 @@ ul {
 }
 
 .navBar__list > a:hover {
-  background-color: var(--dark-grey);
+  background-color: var(--dark__primary);
 }
 
 .navBar__list--active > a {
-  color: var(--light-green);
+  color: var(--secondary);
 }
 
 #bodyResume {
@@ -89,15 +89,15 @@ ul {
   margin-top: 5%;
 }
 .navBar__btn {
-  background-color: var(--dark-grey);
+  background-color: var(--dark__primary);
   border: none;
-  color: var(--white-100);
+  color: var(--on__primary);
   display: none;
   font-size: calc(1em + 3.5vw);
 }
 
 .navBar__closeBtn {
-  color: var(--soft-grey);
+  color: var(--light__primary);
   position: absolute;
   right: 3%;
   display: none;
