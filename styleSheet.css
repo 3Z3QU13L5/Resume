@@ -16,7 +16,7 @@ ul {
   background-color: #333;
 }
 
-.nav__bgPicture {
+.navBar__bgPicture {
   background-color: #111;
   color: #fff;
   height: 100%;
@@ -24,7 +24,7 @@ ul {
   width: 15%;
 }
 
-.nav__pPicture {
+.navBar__profilePic {
   border-radius: 50%;
   height: 90%;
   left: 10%;
@@ -32,7 +32,7 @@ ul {
   top: 5%;
 }
 
-.nav__bgPicture > p{
+.navBar__bgPicture > p {
   margin: unset;
   left: 5.5vw;
   position: absolute;
@@ -73,14 +73,6 @@ ul {
   color: #4CAF50;
 }
 
-.navBar__list__closeBtn {
-  color: #818181;
-  display: none;
-  padding: 5px 5px 0px 0px;
-  text-align: right;
-  text-decoration: none;
-}
-
 #bodyResume {
   position: relative;
   margin-top: 5%;
@@ -92,6 +84,14 @@ ul {
   display: none;
   font-size: calc(1em + 3.5vw);
 }
+
+.navBar__closeBtn {
+  color: #818181;
+  position: absolute;
+  right: 3%;
+  display: none;
+}
+
 .navBar__CVbtn {
   display: block;
   font-size: calc(0.5em + 0.5vw);
@@ -113,7 +113,7 @@ ul {
 
 @media only screen and (max-width: 768px) {
   .navBar__sidebarBtn,
-  .navBar__list__closeBtn,
+  .navBar__closeBtn,
   .navBar__btn{
     display: block;
   }
@@ -128,22 +128,61 @@ ul {
     width: 50%;
     z-index: 1;
   }
+
+  .navBar__bgPicture {
+    height: 25%;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .navBar__profilePic {
+    border-radius: 50%;
+    height: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .navBar__bgPicture > p {
+    font-size: calc(1em + 2vw);
+    left: 50%;
+    text-align: center;
+    top: 70%;
+    transform: translateX(-50%);
+    width: 100%;
+  }
+  
+  .navBar__ul {
+    height: 60%;
+    top: 28%;
+  }
+
   .navBar__list {
     width: 100%;
   }
+
   .navBar__list > a {
     display: block;
     font-size: calc(1em + 2vw);
-    padding: 8px 8px 8px 32px;
+    padding: 0 8px 8px 32px;
     text-align: left;
     text-decoration: none;
     transition: 0.3s;
   }
 
-  .navBar__list__closeBtn .navBar__btn {
+  .navBar__closeBtn .navBar__btn {
     background-color: inherit;
     color: inherit;
     margin-left: 82%;
+  }
+
+  .navBar__CVbtn {
+    font-size: calc(0.6em + 2vw);
+    height: 8vh;
+    left: 50%;
+    right: unset;
+    top: 90%;
+    transform: translateX(-50%);
+    width: 55%;
   }
   
 }
