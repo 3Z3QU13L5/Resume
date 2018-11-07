@@ -113,7 +113,7 @@ ul {
 }
 
 .home__parallax{
-  background-image: url(https://images.pexels.com/photos/261577/pexels-photo-261577.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-image: url('images/homeSection_backgroundImage.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
