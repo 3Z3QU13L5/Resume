@@ -1,9 +1,43 @@
-html{
-  font-size: calc(0.7em + 0.5vw);
+:root {
+  --on__primary: #fff;
+  --on__backgrond: #fff;
+  --light__primary: rgba(129, 129, 129, 1);
+  --primary__color: rgba(50, 50, 50, 1);
+  --dark__primary: rgba(17, 17, 17, 1);
+  --secondary__color: rgba(76, 175, 80, 1);
+  --background__color: #000; 
 }
 
-ul {
+html {
+  color: var(--on__backgrond);
+  background-color: var(--background__color);
+  font-size: calc(0.7em + 0.5vw);
+  
+}
+
+body,
+header,
+#bodyResume{
+  position: relative;
+}
+
+body{
+  margin: 0;
+}
+
+header{
+  z-index: 2;
+}
+
+section{
+  position: relative;
+  width: 100%;
+}
+
+ul { 
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 #navBar {
@@ -13,35 +47,37 @@ ul {
   /*25px for the padding and  0.7em + 0.5vw goes for the font-size on 'navBar__list > a'*/
   height: calc(26px + 0.7em + 0.5vw);
   top: 0;
-  background-color: #333;
+  background-color: var(--primary__color);
 }
 
 .navBar__bgPicture {
-  background-color: #111;
-  color: #fff;
+  background-color: var(--dark__primary);
+  color: var(--on__primary);
   height: 100%;
-  position: absolute;
+  position: relative;
   width: 15%;
 }
 
 .navBar__profilePic {
   border-radius: 50%;
   height: 90%;
-  left: 10%;
+  left: 7%;
   position: absolute;
   top: 5%;
 }
 
 .navBar__bgPicture > p {
+  background-color: inherit;
   margin: unset;
-  left: 5.5vw;
+  left: 5vw;
+  padding: 0 3%;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
 }
 
 .navBar__ul {
-  background-color: #333;
+  background-color: var(--primary__color);
   height: 100%;
   left: 50%;
   margin: 0;
@@ -57,36 +93,32 @@ ul {
   float: left;
 }
 
-.navBar__list > a {
-  color: white;
+.navBar__list > a{
+  color: var(--on__primary);
   display: block;
-  padding: 12px 16px;
+  padding: 14px 16px;
   text-align: center;
   text-decoration: none;
 }
 
 .navBar__list > a:hover {
-  background-color: #111;
+  background-color: var(--dark__primary);
 }
 
 .navBar__list--active > a {
-  color: #4CAF50;
+  color: var(--secondary__color);
 }
 
-#bodyResume {
-  position: relative;
-  margin-top: 5%;
-}
 .navBar__btn {
-  background-color: #111;
+  background-color: var(--dark__primary);
   border: none;
-  color: #fff;
+  color: var(--on__primary);
   display: none;
   font-size: calc(1em + 3.5vw);
 }
 
 .navBar__closeBtn {
-  color: #818181;
+  color: var(--light__primary);
   position: absolute;
   right: 3%;
   display: none;
@@ -111,6 +143,101 @@ ul {
   opacity: 0.7;
 }
 
+#bodyResume {
+  position: relative;
+  margin-top: calc(26px + 0.7em + 0.5vw);
+}
+
+#home{
+  padding-bottom: 45%;
+}
+
+.home__right{
+  color: var(--white_100);
+  left: 0;
+  height: 100%;
+  position: absolute;
+  width: 75%;
+}
+
+.home__parallax{
+  background-image: url('images/homeSection_backgroundImage.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home__greeting{
+  font-size: calc(0.8em + 1vw);
+  left: 5%;
+  position: inherit;
+  top: 40%;  
+}
+
+.home__greeting > p,
+.home__greeting > h1{
+  margin: 0;
+}
+
+.home__left{
+  background-color: #333;
+  color: var(--white_100);
+  height: 100%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  width: 25%;
+}
+
+.home__profilePicture{
+  border-radius: 50%; 
+  margin: 5% 0 10% 30%;
+  overflow: hidden;
+  width: 40%
+}
+
+.home__profileName{
+  font-size: calc(0.5em + 0.8vw);
+  margin: 10% 0 10% 0;
+}
+
+.home__profilePicture > img {
+  width: 100%
+}
+
+.home__academic{
+  font-size: calc(0.1em + 0.9vw);  
+  margin: 10% 0 10% 0;  
+}
+
+.home__network{
+  margin: 10% 0 10% 0;
+}
+
+.home__downloadCV{
+  font-size: calc(0.1em + 1vw);
+  display: inline;
+}
+
+.network{
+  display: inline-flex;
+}
+
+.network > li{
+  margin: 5% 6px 0% 6px;
+}
+
+.network__icon{
+  width: calc(0.6em + 1.2vw);
+}
+
+.network__icon > img{
+  width: 100%;
+}
+
+
+
 @media only screen and (max-width: 768px) {
   .navBar__sidebarBtn,
   .navBar__closeBtn,
@@ -125,7 +252,7 @@ ul {
     position: fixed;
     top: 0;
     transition: 0.5s;
-    width: 50%;
+    width: 55%;
     z-index: 1;
   }
 
@@ -143,7 +270,7 @@ ul {
   }
 
   .navBar__bgPicture > p {
-    font-size: calc(1em + 2vw);
+    font-size: calc(0.9em + 2vw);
     left: 50%;
     text-align: center;
     top: 70%;
@@ -162,7 +289,7 @@ ul {
 
   .navBar__list > a {
     display: block;
-    font-size: calc(1em + 2vw);
+    font-size: calc(1em + 1.8vh);
     padding: 0 8px 8px 32px;
     text-align: left;
     text-decoration: none;
@@ -175,6 +302,40 @@ ul {
     margin-left: 82%;
   }
 
+  #home {
+    height: 90%;
+  }
+
+  .home__right{
+    display: none;
+  }
+
+  .home__left{
+    width: 100%;
+  }
+
+  .home__profilePicture{
+    margin: 5% 0 0 35%;
+    width: 30%;
+  }
+
+  .home__profileName{
+    font-size: calc(1em + 2vw);
+  }
+
+  .home__academic{
+    font-size: calc(0.7em + 1.5vw)
+  }
+
+  .home__network{
+    font-size: calc(0.8em + 0.9vw);
+    margin: 5% 0 3% 0;
+  }
+
+  .home__downloadCV {
+    font-size: calc(0.6em + 1.3vw);
+    display: inline;
+  }
   .navBar__CVbtn {
     font-size: calc(0.6em + 2vw);
     height: 8vh;
@@ -184,5 +345,5 @@ ul {
     transform: translateX(-50%);
     width: 55%;
   }
-  
+
 }
