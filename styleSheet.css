@@ -149,7 +149,7 @@ ul {
 }
 
 #home {
-  padding-bottom: 45%;
+  height: 92vh;
 }
 
 .home__right {
@@ -236,6 +236,17 @@ ul {
   width: 100%;
 }
 
+@media only screen and (max-width: 1024px) and (min-height: 768px){
+  #home {
+    height: calc(60vh + 10vw);
+  }
+}
+
+@media only screen and (max-width: 812px) and (min-width: 769px){
+  #home {
+    height: calc(60vh + 20vw);
+  }
+}
 
 
 @media only screen and (max-width: 768px) {
@@ -304,7 +315,7 @@ ul {
   }
 
   #home {
-    height: 55vh;
+    height: calc(65vh + 80vw);
   }
 
   .home__right {
