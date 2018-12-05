@@ -17,19 +17,19 @@ html {
 
 body,
 header,
-#bodyResume{
+#bodyResume {
   position: relative;
 }
 
-body{
+body {
   margin: 0;
 }
 
-header{
+header {
   z-index: 2;
 }
 
-section{
+section {
   position: relative;
   width: 100%;
 }
@@ -93,7 +93,7 @@ ul {
   float: left;
 }
 
-.navBar__list > a{
+.navBar__list > a {
   color: var(--on__primary);
   display: block;
   padding: 14px 16px;
@@ -148,11 +148,11 @@ ul {
   margin-top: calc(26px + 0.7em + 0.5vw);
 }
 
-#home{
+#home {
   padding-bottom: 45%;
 }
 
-.home__right{
+.home__right {
   color: var(--white_100);
   left: 0;
   height: 100%;
@@ -160,7 +160,7 @@ ul {
   width: 75%;
 }
 
-.home__parallax{
+.home__parallax {
   background-image: url('images/homeSection_backgroundImage.jpg');
   background-attachment: fixed;
   background-position: center;
@@ -168,7 +168,7 @@ ul {
   background-size: cover;
 }
 
-.home__greeting{
+.home__greeting {
   font-size: calc(0.8em + 1vw);
   left: 5%;
   position: inherit;
@@ -176,11 +176,11 @@ ul {
 }
 
 .home__greeting > p,
-.home__greeting > h1{
+.home__greeting > h1 {
   margin: 0;
 }
 
-.home__left{
+.home__left {
   background-color: #333;
   color: var(--white_100);
   height: 100%;
@@ -190,14 +190,14 @@ ul {
   width: 25%;
 }
 
-.home__profilePicture{
+.home__profilePicture {
   border-radius: 50%; 
   margin: 5% 0 10% 30%;
   overflow: hidden;
   width: 40%
 }
 
-.home__profileName{
+.home__profileName {
   font-size: calc(0.5em + 0.8vw);
   margin: 10% 0 10% 0;
 }
@@ -206,25 +206,25 @@ ul {
   width: 100%
 }
 
-.home__academic{
+.home__academic {
   font-size: calc(0.1em + 0.9vw);  
   margin: 10% 0 10% 0;  
 }
 
-.home__network{
+.home__network {
   margin: 10% 0 10% 0;
 }
 
-.home__downloadCV{
+.home__downloadCV {
   font-size: calc(0.1em + 1vw);
   display: inline;
 }
 
-.network{
+.network {
   display: inline-flex;
 }
 
-.network > li{
+.network > li {
   margin: 5% 6px 0% 6px;
 }
 
@@ -232,7 +232,7 @@ ul {
   width: calc(0.6em + 1.2vw);
 }
 
-.network__icon > img{
+.network__icon > img {
   width: 100%;
 }
 
@@ -306,28 +306,28 @@ ul {
     height: 55vh;
   }
 
-  .home__right{
+  .home__right {
     display: none;
   }
 
-  .home__left{
+  .home__left {
     width: 100%;
   }
 
-  .home__profilePicture{
+  .home__profilePicture {
     margin: 5% 0 0 35%;
     width: 30%;
   }
 
-  .home__profileName{
+  .home__profileName {
     font-size: calc(1em + 2vw);
   }
 
-  .home__academic{
+  .home__academic {
     font-size: calc(0.7em + 1.5vw)
   }
 
-  .home__network{
+  .home__network {
     font-size: calc(0.8em + 0.9vw);
     margin: 5% 0 3% 0;
   }
