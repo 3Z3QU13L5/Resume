@@ -228,7 +228,7 @@ ul {
   margin: 5% 6px 0% 6px;
 }
 
-.network__icon{
+.network__icon {
   width: calc(0.6em + 1.2vw);
 }
 
@@ -252,7 +252,7 @@ ul {
     position: fixed;
     top: 0;
     transition: 0.5s;
-    width: 55%;
+    width: 60vw;
     z-index: 1;
   }
 
@@ -303,7 +303,7 @@ ul {
   }
 
   #home {
-    height: 90%;
+    height: 55vh;
   }
 
   .home__right{
