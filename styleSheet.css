@@ -253,6 +253,7 @@ ul {
     top: 0;
     transition: 0.5s;
     width: 60vw;
+    width: 0;
     z-index: 1;
   }
 
@@ -335,6 +336,9 @@ ul {
   .home__downloadCV {
     font-size: calc(0.6em + 1.3vw);
     display: inline;
+  }
+  .network__icon {
+    width: calc(1.6em + 1.2vw);
   }
   .navBar__CVbtn {
     font-size: calc(0.6em + 2vw);
