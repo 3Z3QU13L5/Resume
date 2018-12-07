@@ -245,8 +245,17 @@ ul {
 
 .professional__title {
   position: absolute;
-  margin: 4% 0 0 4%;
+  margin: 5% 0 0 4%;
   text-align: left;
+}
+
+.professional__title > h3 {
+  font-size: calc(1em + 0.5vw);
+  margin-bottom: 0;
+}
+
+.professional__title > p {
+  margin-top: 0;
 }
 
 .professional__list {
