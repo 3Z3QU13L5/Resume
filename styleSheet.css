@@ -282,6 +282,10 @@ ul {
   width: 70vw;
 }
 
+#experince {
+  background-image: url('images/experinceSection_backgroudImage.jpg');
+}
+
 @media only screen and (max-width: 1024px) and (min-height: 768px){
   #home {
     height: calc(60vh + 10vw);
