@@ -243,18 +243,18 @@ ul {
   height: 90vh;
 }
 
-.professional__title {
+.title {
   position: absolute;
   margin: 5% 0 0 4%;
   text-align: left;
 }
 
-.professional__title > h3 {
+.title > h3 {
   font-size: calc(1em + 0.5vw);
   margin-bottom: 0;
 }
 
-.professional__title > p {
+.title > p {
   margin-top: 0;
 }
 
@@ -284,6 +284,16 @@ ul {
 
 #experince {
   background-image: url('images/experinceSection_backgroudImage.jpg');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200vh;
+}
+
+.experince__content {
+  position: absolute;
+  top: 12%;
+  width: 100%;
 }
 
 @media only screen and (max-width: 1024px) and (min-height: 768px){
