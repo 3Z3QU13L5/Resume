@@ -296,6 +296,46 @@ ul {
   width: 100%;
 }
 
+.experince__text {
+  margin-left: 4.5%;
+}
+
+.experince__line {
+  background-color: var(--light_secondary);
+  border-radius: 15px;
+  height: 150vh;
+  transform: translateX(50vw);
+  width: 0.5vw;
+}
+
+.experince__content > ul {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.experince__content--right {
+  margin-left: 50.2%;
+  width: 45%;
+}
+
+.experince__content--left {
+  text-align: right;
+  width: 49%;
+}
+
+.experince__point {
+  background-color: var(--light_secondary);
+  border-radius: 50%;
+  height: 20px;
+  position: absolute;
+  width: 20px;
+}
+
+.experince__point--left {
+  right: 48.8%;
+}
+
 @media only screen and (max-width: 1024px) and (min-height: 768px){
   #home {
     height: calc(60vh + 10vw);
