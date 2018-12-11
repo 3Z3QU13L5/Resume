@@ -314,6 +314,10 @@ ul {
     margin-left: 82%;
   }
 
+  #bodyResume {
+    margin-top: 0;
+  }
+
   #home {
     height: calc(65vh + 80vw);
   }
