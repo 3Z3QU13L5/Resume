@@ -236,6 +236,29 @@ ul {
   width: 100%;
 }
 
+.awardsInterest {
+  background-color: var(--dark__primary);
+  font-size: 1.2em;
+  height: 80vh;
+}
+
+.awardsInterest__list {
+  background-color: var(--light__primary);
+  border-radius: 20px;
+  height: 85%;
+  margin: 0 4%;
+  padding: 0 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 90%;
+  z-index: 2;
+}
+
+.awardsInterest__list > h3 {
+  font-size: 2rem;
+  text-align: center;
+}
 
 
 @media only screen and (max-width: 768px) {
