@@ -239,33 +239,29 @@ ul {
 #awardsInterest {
   background-color: var(--dark__primary);
   font-size: 1.2em;
-  height: 80vh;
-  transform-style: preserve-3d;
-  -webkit-transform-style: preserve-3d;
+  height: calc(60vh + 20vw);
+  display: inline-flex;
 }
 
 .awardsInterest__list {
   background-color: var(--light__primary);
   border-radius: 20px;
   height: 90%;
-  margin: 0 4%;
+  margin: 2%;
   padding: 0 10px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  position: initial;
   width: 85%;
   z-index: 20;
 }
 
 .awardsInterest__list > h3 {
-  font-size: calc(2rem + 1vw);
+  font-size: calc(2rem + 0.5vw);
   margin-bottom: 0%;
   text-align: center;
 }
 .awardsInterest__list > p {
   margin-top: 0%;
   text-align: center;
-  text-decoration: 
 }
 
 .awardsInterest__list > ul {
@@ -274,8 +270,13 @@ ul {
 }
 
 .interest {
-  -webkit-transform: rotateY(180deg) translateY(-50%);
-  transform: rotateY(180deg) translateY(-50%);
+  margin-left: 0;
+}
+
+.interest>ul li:nth-child(odd){
+  display: inline;
+  float: left;
+  margin: 0 calc(15% + 2vw);
 }
 
 .flip-vertical-right {
@@ -287,6 +288,7 @@ ul {
 	-webkit-animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 	        animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 }
+
 
 @media only screen and (max-width: 768px) {
   .navBar__sidebarBtn,
@@ -395,7 +397,30 @@ ul {
     transform: translateX(-50%);
     width: 55%;
   }
+}
 
+@media screen and (max-width: 823px){
+  #awardsInterest {
+    display: block;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+  }
+
+  .awardsInterest__list {
+    margin: 0 5%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .awardsInterest__list > h3 {
+    font-size: calc(2rem + 1vw);
+  }
+
+  .interest {
+    -webkit-transform: rotateY(180deg) translateY(-50%);
+    transform: rotateY(180deg) translateY(-50%);
+  }
 }
  @-webkit-keyframes flip-vertical-right {
   0% {
