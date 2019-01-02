@@ -260,7 +260,7 @@ ul {
   height: calc(60em + 40vh);
 }
 
-.experince__backgroundOpacity {
+.experince__background {
   background-color: var(--background__color);
   height: 100%;
   opacity: 0.5;
