@@ -243,11 +243,11 @@ ul {
 
 .contact__elementBackground {
   background-image: linear-gradient(rgba(50,50,50,0), var(--primary__color) 29%, var(--background__color));
-  height: 80%;
   left: 4%;
   padding: 25px;
   position: absolute;
   text-align: center;
+  top:  24%;
   width: 80%;
 }
 
