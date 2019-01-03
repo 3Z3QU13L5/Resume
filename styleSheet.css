@@ -236,7 +236,10 @@ ul {
   width: 100%;
 }
 
-
+#contact {
+  background-image: url(images/contactSection_mail1.png);
+  height: calc(30rem + 20vh + 20vw);
+  }
 
 @media only screen and (max-width: 768px) {
   .navBar__sidebarBtn,
