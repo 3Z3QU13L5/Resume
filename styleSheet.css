@@ -239,7 +239,17 @@ ul {
 #contact {
   background-image: url(images/contactSection_mail1.png);
   height: calc(30rem + 20vh + 20vw);
-  }
+}
+
+.contact__elementBackground {
+  background-image: linear-gradient(rgba(50,50,50,0), var(--primary__color) 29%, var(--background__color));
+  height: 80%;
+  left: 4%;
+  padding: 25px;
+  position: absolute;
+  text-align: center;
+  width: 80%;
+}
 
 @media only screen and (max-width: 768px) {
   .navBar__sidebarBtn,
