@@ -2,6 +2,7 @@
   --on__primary: #fff;
   --on__backgrond: #fff;
   --light__primary: rgba(129, 129, 129, 1);
+  --light__secondary: rgba(161, 241, 187, 1);
   --primary__color: rgba(50, 50, 50, 1);
   --dark__primary: rgba(17, 17, 17, 1);
   --secondary__color: rgba(76, 175, 80, 1);
@@ -247,8 +248,37 @@ ul {
   padding: 25px;
   position: absolute;
   text-align: center;
-  top:  24%;
+  top:  10%;
   width: 80%;
+}
+
+label {
+  display: none;
+}
+
+input {
+  height: 2rem;
+  width: 85%;
+}
+
+textarea {
+  width: 85%;
+}
+
+input:hover {
+  background-color: var(--light__secondary);
+}
+
+.contact__summitButton {
+  background-color: var(--secondary__color);
+  border: none;
+  font-size: 1.7rem;
+  height: 2.5rem;
+  width: 87%;
+}
+
+form > div {
+  margin: 10px 0;
 }
 
 @media only screen and (max-width: 768px) {

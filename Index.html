@@ -278,7 +278,7 @@
       <li>
         <section id="contact">
           <div class="contact__elementBackground">
-            <div>
+            <div class="title">
               <h3>
                 Contact
               </h3>
@@ -286,23 +286,28 @@
             <div class="contact__form">
               <form action="#" method="post">
                 <div>
-                  <label for="name">Text Input:</label>
-                  <input type="text" name="name" id="name" value="" />
+                  <label for="name">Name</label>
+                  <input type="text" name="name" id="name" value="" required placeholder="Name" />
                 </div>
 
                 <div>
-                  <label for="email">Text Input:</label>
-                  <input type="text" name="email" id="email" value="" />
+                  <label for="email">Email</label>
+                  <input type="text" name="email" id="email" value="" required placeholder="Email" />
                 </div>
 
                 <div>
-                  <label for="subject">Text Input:</label>
-                  <input type="text" name="subject" id="subject" value="" />
-                </div>      
+                  <label for="phone">Phone</label>
+                  <input type="text" name="phone" id="phone" value="" placeholder="Phone" />
+                </div>       
+
+                <div>
+                  <label for="subject">Subject</label>
+                  <input type="text" name="subject" id="subject" value="" placeholder="Subject" />
+                </div>   
                           
                 <div>
-                  <label for="message">Textarea:</label>
-                  <textarea cols="40" rows="8" name="message" id="textarea"></textarea>
+                  <label for="message">Message</label>
+                  <textarea cols="40" rows="10" name="message" id="textarea" placeholder="Write your message"></textarea>
                 </div>
 
                 <div>
