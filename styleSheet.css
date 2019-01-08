@@ -13,7 +13,6 @@ html {
   color: var(--on__backgrond);
   background-color: var(--background__color);
   font-size: calc(0.7em + 0.5vw);
-  
 }
 
 body,
@@ -42,13 +41,13 @@ ul {
 }
 
 #navBar {
+  background-color: var(--primary__color);
   display: inline;
-  position: fixed;
-  width: 100%;
   /*25px for the padding and  0.7em + 0.5vw goes for the font-size on 'navBar__list > a'*/
   height: calc(26px + 0.7em + 0.5vw);
+  position: fixed;
   top: 0;
-  background-color: var(--primary__color);
+  width: 100%;
 }
 
 .navBar__bgPicture {
@@ -135,6 +134,7 @@ ul {
   transform: translateY(-50%);
   width: 15%;
 }
+
 .navBar__sidebarBtn {
   padding: 1px;
   position: fixed;
@@ -217,8 +217,8 @@ ul {
 }
 
 .home__downloadCV {
-  font-size: calc(0.1em + 1vw);
   display: inline;
+  font-size: calc(0.1em + 1vw);
 }
 
 .network {
@@ -239,13 +239,13 @@ ul {
 
 #professional {
   background-color: var(--primary__color);
-  text-align: center;
   height: calc(90vh + 10vw + 50px);
+  text-align: center;
 }
 
 .title {
-  position: absolute;
   margin: 5% 0 0 4%;
+  position: absolute;
   text-align: left;
 }
 
@@ -311,7 +311,6 @@ ul {
   width: 45%;
 }
 
-
 .experince__content--left {
   text-align: right;
   width: 50%;
@@ -322,8 +321,8 @@ ul {
   border-radius: 50%;
   height: 15px;
   position: absolute;
-  width: 15px;
   transform: translateX(-50%);
+  width: 15px;
 }
 
 .experince__point--left {
@@ -343,6 +342,7 @@ ul {
 .experince__date {
   color: var(--secondary__color);
   margin-bottom: 0;
+}
 
 .professional__list__skill {
   width: 15vw;
@@ -353,7 +353,6 @@ ul {
   height: 100%;
   margin: 0;
   text-align: right;
-
 }
 
 @media only screen and (max-width: 1024px) and (min-height: 768px){
@@ -516,6 +515,7 @@ ul {
   .experince__text > h4 {
     font-size: 1.2rem;
     margin-top: 0;
+  }
 
   #professional {
     height: calc(60vh + 55vw + 50px);
@@ -532,7 +532,6 @@ ul {
 
   .professional__list__skill {
     width: 25vw;
-
   }
 
 }
