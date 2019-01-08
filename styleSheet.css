@@ -239,17 +239,23 @@ ul {
 
 #contact {
   background-image: url(images/contactSection_mail1.png);
-  height: calc(30rem + 20vh + 20vw);
+  height: calc(30rem + 15vh + 15vw);
 }
 
 .contact__elementBackground {
   background-image: linear-gradient(rgba(50,50,50,0), var(--primary__color) 29%, var(--background__color));
-  left: 4%;
+  left: 50%;
   padding: 25px;
   position: absolute;
   text-align: center;
-  top:  5%;
-  width: 80%;
+  transform: translateX(-50%);
+  top: 15%;
+  width: 44%;
+}
+
+form {
+  display: grid;
+  grid-auto-columns: 20rem 20rem;
 }
 
 label {
@@ -271,16 +277,29 @@ input:hover {
   background-color: var(--light__secondary);
 }
 
+form > div {
+  grid-column: 1 / 3;
+  margin: 10px 0;
+}
+
+.contact__formPhone {
+  grid-column: 1 / 2;
+  justify-self: end;
+  width: 92%;
+}
+
+.contact__formSubject {
+  grid-column: 2 / 2;
+  justify-self: start;
+  width: 92%;
+}
+
 .contact__summitButton {
   background-color: var(--secondary__color);
   border: none;
   font-size: 1.7rem;
   height: 2.5rem;
   width: 87%;
-}
-
-form > div {
-  margin: 10px 0;
 }
 
 @media only screen and (max-width: 768px) {
@@ -391,4 +410,19 @@ form > div {
     width: 55%;
   }
 
+  #contact {
+    height: calc(30rem + 20vh + 20vw);
+  }
+
+  .contact__elementBackground {
+    left: 4%;
+    top:  5%;
+    width: 80%;
+  }
+
+  .contact__formPhone, .contact__formSubject {
+    width: unset;
+  } 
+
+  
 }
