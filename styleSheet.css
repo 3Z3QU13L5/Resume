@@ -13,7 +13,6 @@ html {
   color: var(--on__backgrond);
   background-color: var(--background__color);
   font-size: calc(0.7em + 0.5vw);
-  
 }
 
 body,
@@ -42,13 +41,13 @@ ul {
 }
 
 #navBar {
+  background-color: var(--primary__color);
   display: inline;
-  position: fixed;
-  width: 100%;
   /*25px for the padding and  0.7em + 0.5vw goes for the font-size on 'navBar__list > a'*/
   height: calc(26px + 0.7em + 0.5vw);
+  position: fixed;
   top: 0;
-  background-color: var(--primary__color);
+  width: 100%;
 }
 
 .navBar__bgPicture {
@@ -135,6 +134,7 @@ ul {
   transform: translateY(-50%);
   width: 15%;
 }
+
 .navBar__sidebarBtn {
   padding: 1px;
   position: fixed;
@@ -217,8 +217,8 @@ ul {
 }
 
 .home__downloadCV {
-  font-size: calc(0.1em + 1vw);
   display: inline;
+  font-size: calc(0.1em + 1vw);
 }
 
 .network {
@@ -239,34 +239,8 @@ ul {
 
 #professional {
   background-color: var(--primary__color);
-  text-align: center;
   height: calc(90vh + 10vw + 50px);
-}
-
-.professional__title {
-  position: absolute;
-  margin: 5% 0 0 4%;
-  text-align: left;
-}
-
-.professional__title > h3 {
-  font-size: calc(1em + 0.5vw + 1vh);
-  margin-bottom: 0;
-}
-
-.professional__title > p {
-  margin-top: 0;
-}
-
-.professional__list {
-  position: absolute;
-  top: 30%;
-}
-
-.professional__list > ul {
-  margin-left: 4%;
-  text-align: left;
-  top: 20%;
+  text-align: center;
 }
 
 .professional__list li {
@@ -283,6 +257,118 @@ ul {
   height: 100%;
   margin: 0;
   text-align: right;
+}
+
+.professional__list {
+  position: absolute;
+  top: 30%;
+}
+
+.professional__list > ul {
+  margin-left: 4%;
+  text-align: left;
+  top: 20%;
+}
+
+.title {
+  margin: 5% 0 0 4%;
+  position: absolute;
+  text-align: left;
+}
+
+.title > h3 {
+  font-size: calc(1em + 0.5vw);
+  margin-bottom: 0;
+}
+
+.title > p {
+  margin-top: 0;
+}
+
+#experince {
+  background-image: url('images/experinceSection_backgroudImage.jpg');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(60em + 40vh);
+}
+
+.experince__background {
+  background-color: var(--background__color);
+  height: 100%;
+  opacity: 0.5;
+}
+
+.experince__title {
+  left: 50%;
+  margin-left: 0;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+.experince__content {
+  position: absolute;
+  top: 12%;
+  width: 100%;
+}
+
+.experince__line {
+  background-color: var(--light_secondary);
+  border-radius: 15px;
+  height: 107vh;
+  left: 50%;
+  position: absolute;
+  top: 28px;
+  transform: translateX(-50%);
+  width: 3.8px;
+}
+
+.experince__content > ul {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.experince__content > ul > li {
+  margin-bottom: 5%;
+}
+
+.experince__content--right {
+  margin-left: 50%;
+  width: 45%;
+}
+
+.experince__content--left {
+  text-align: right;
+  width: 50%;
+}
+
+.experince__point {
+  background-color: var(--light_secondary);
+  border-radius: 50%;
+  height: 15px;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 15px;
+}
+
+.experince__point--left {
+  margin-left: 50%;
+}
+
+.experince__text {
+  font-size: calc(1rem + 0.1vw + 0.1vh);
+  margin-left: 4.5%;
+  margin-right: 4.5%;
+}
+
+.experince__text > h4 {
+  margin-top: 0;
+}
+
+.experince__date {
+  color: var(--secondary__color);
+  margin-bottom: 0;
 }
 
 @media only screen and (max-width: 1024px) and (min-height: 768px) {
@@ -367,6 +453,10 @@ ul {
     margin-left: 82%;
   }
 
+  #bodyResume {
+    margin-top: 0;
+  }
+
   #home {
     height: calc(65vh + 80vw);
   }
@@ -412,6 +502,35 @@ ul {
     top: 90%;
     transform: translateX(-50%);
     width: 55%;
+  }
+
+  .experince__line {
+    display: none;
+  }
+
+  .experince__content--right {
+    margin: 0%;
+    width: 100%;
+  }
+
+  .experince__content--left {
+    text-align: unset;
+    width: 100%;
+  }
+
+  .experince__point {
+    border-radius: 15px;
+    height: 5px;
+    margin: 0;
+    margin-left: 1%;
+    position: static;
+    transform: none;
+    width: 98vw;
+  }
+
+  .experince__text > h4 {
+    font-size: 1.2rem;
+    margin-top: 0;
   }
 
   #professional {
