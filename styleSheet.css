@@ -230,7 +230,7 @@ ul {
 }
 
 .network__icon{
-  width: calc(0.6em + 1.2vw);
+  width: calc(0.6rem + 1.2vw + 1.6vh);
 }
 
 .network__icon > img{
@@ -248,7 +248,7 @@ ul {
   padding: 25px;
   position: absolute;
   text-align: center;
-  top:  10%;
+  top:  5%;
   width: 80%;
 }
 
@@ -257,11 +257,13 @@ label {
 }
 
 input {
+  font-size: 1rem;
   height: 2rem;
   width: 85%;
 }
 
 textarea {
+  font-size: 1rem;
   width: 85%;
 }
 
