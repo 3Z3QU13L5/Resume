@@ -10,7 +10,7 @@
     <nav id="navBar">
       <div class="navBar__bgPicture">
         <button class="navBar__closeBtn navBar__btn">&#9747</button>
-        <img class="navBar__profilePic" src="images\miguel_profilePicture.jpg" alt="Miguel Solano' s profile picture">
+        <img class="navBar__profilePic" src="https://www.gravatar.com/avatar/8c14f1ef1fad4edbda6e5a0bc8e68ecb" alt="Miguel Solano' s profile picture">
         <p>Miguel E. Solano A.</p>
       </div>
       <ul class="navBar__ul">
@@ -70,7 +70,7 @@
                 <br>Santiago, Dominican Republic
               </p>
             </div>
-            <div class="home__network">
+            <div class="home__network" onmousedown="return false;" onselectstart="return false;">
               <p> 
                 miguel.abreu03@gmail.com 
                 <br> 1 (000) 000-0000
@@ -104,6 +104,13 @@
                     </div>
                   </a>
                 </li>
+                <li>
+                  <a href="">
+                    <div class="network__icon">
+                      <img src="images/github-icon.svg" alt="Github icon">
+                    </div>
+                  </a>
+                </li>
               </ul>
             </div>
             <button class="home__downloadCV navBar__btn">
@@ -115,53 +122,63 @@
       <li>
         <section id="professional">
           <div class="professional__parallax">
-            <div class="professional__title">
+            <div class="title">
               <h3>
-                Professional
+                Professional Skills
               </h3>
-            </div>
-            <div>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                My Knowledge Level
               </p>
             </div>
             <div class="professional__list">
              <ul>
                <li>
-                  <div>
-                    Morbi 
+                  <div class="professional__list__skill">
+                    PHOTOSHOP 
                   </div>
-                  <div class="professional__percentBar"></div>
-                  <div>
-                    00%
-                  </div>
+                  <div class="professional__percentBar" style="width: calc(85vw - 20vw);">85%</div>
                 </li>
                <li>
-                  <div>
-                    Praesent, metus.
+                  <div class="professional__list__skill">
+                    ILLUSTRATOR
                   </div>
-                  <div class="professional__percentBar"></div>
-                  <div>
-                    00%
-                  </div>
+                  <div class="professional__percentBar" style="width: calc(80vw - 20vw);">80%</div>
                </li>
                <li>
-                  <div>
-                    Phasellus, nisi.
+                  <div class="professional__list__skill">
+                    JAVASCRIPT
                   </div>
-                  <div class="professional__percentBar"></div>
-                  <div>
-                    00%
-                  </div>
+                  <div class="professional__percentBar" style="width: calc(70vw - 20vw);">70%</div>
                </li>
                <li>
-                  <div>
-                    Pellentesque, nunc.
+                  <div class="professional__list__skill">
+                    HTML & CSS
                   </div>
-                  <div class="professional__percentBar"></div>
-                  <div>
-                    00%
+                  <div class="professional__percentBar" style="width: calc(75vw - 20vw);">75%</div>
+               </li>
+               <li>
+                  <div class="professional__list__skill">
+                    PYTHON
                   </div>
+                  <div class="professional__percentBar" style="width: calc(65vw - 20vw);">65%</div>
+               </li>
+               <li>
+                  <div class="professional__list__skill">
+                    C+
+                  </div>
+                  <div class="professional__percentBar" style="width: calc(78vw - 20vw);">78%</div>
+               </li>
+               <li>
+                  <div class="professional__list__skill">
+                    ESPAÑOL
+                  </div>
+                  <div class="professional__percentBar" style="width: calc(90vw - 20vw);">90%</div>
+               </li>
+               <li>
+                  <div class="professional__list__skill">
+                    ENGLISH
+                  </div>
+                  <div class="professional__percentBar" style="width: calc(83vw - 20vw);">83%</div>
                </li>
              </ul>
             </div>
@@ -170,73 +187,112 @@
       </li>
       <li>
         <section id="experince">
-          <div>
+          <div class="experince__background"></div>
+          <div class="title experince__title">
             <h3>
               Experience
             </h3>
           </div>
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            </p>
-          </div>
-          <div>
+          <div class="experince__content">
             <div class="experince__line"></div>
             <ul>
-              <li>
+              <li class="experince__content--right">
                 <div>
                   <div class="experince__point"></div>
-                  <p>
-                    2000-2000
-                  </p>
-                  <h4>
-                    Awards
-                  </h4>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                  </p>
+                  <div class="experince__text">
+                    <p class="experince__date">
+                      March 2018 - currently
+                    </p>
+                    <h4>
+                      Intellisys D’ Corp.
+                    </h4>
+                    <p>
+                      Proyect: CondeNast, Developer Junior <br>
+                      Proyect: SoulCycle, Quality Assurance (QA)
+                    </p>
+                  </div>
                 </div>
               </li>
-              <li>
+              <li class="experince__content--left">
                 <div>
-                  <div class="experince__point"></div>
-                  <p>
-                    2000-2000
-                  </p>
-                  <h4>
-                    Awards
-                  </h4>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                  </p>
+                  <div class="experince__point experince__point--left"></div>
+                  <div class="experince__text">
+                    <p class="experince__date">
+                      March 2017 - May 2017
+                    </p>
+                    <h4>
+                      Edenorte Dominicana, S.A.
+                    </h4>
+                    <p>
+                      Intern Telematic Networks <br>
+                      Communications Managemen, Technology Directorate 
+                    </p>
+                  </div>
                 </div>
               </li>
-              <li>
+              <li class="experince__content--right">
                 <div>
                   <div class="experince__point"></div>
-                  <p>
-                    2000-2000
-                  </p>
-                  <h4>
-                    Awards
-                  </h4>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                  </p>
+                  <div class="experince__text">
+                    <p class="experince__date">
+                      August 2016 - December 2017
+                    </p>
+                    <h4>
+                      Pontificia Universidad Católica Madre y Maestra (PUCMM)
+                    </h4>
+                    <p>
+                      Assistant Professor and Laboratory, <br> 
+                      subject of Materias Teoría de Códigos, Lab. Circuito Logico &#38; Lab. Circuito Eléctrico
+                    </p>
+                  </div>
                 </div>
               </li>
-              <li>
+              <li class="experince__content--left">
+                <div>
+                  <div class="experince__point experince__point--left"></div>
+                  <div class="experince__text">
+                    <p class="experince__date">
+                      January 2012 - August 2014
+                    </p>
+                    <h4>
+                      Independent Tutor
+                    </h4>
+                    <p>
+                       Algebra, Geometry &#38; Trigonometry
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="experince__content--right">
                 <div>
                   <div class="experince__point"></div>
-                  <p>
-                    2000-2000
-                  </p>
-                  <h4>
-                    Awards
-                  </h4>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                  </p>
+                  <div class="experince__text">
+                    <p class="experince__date">
+                      July 2010 - August 2010
+                    </p>
+                    <h4>
+                      McDonald´s
+                    </h4>
+                    <p>
+                      General Employee: Summer Program Outstanding Students 
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="experince__content--left">
+                <div>
+                  <div class="experince__point experince__point--left"></div>
+                  <div class="experince__text">
+                    <p class="experince__date">
+                      July 2009 - August 2009
+                    </p> 
+                    <h4>
+                      HEMI Distributor, Family Business
+                    </h4>
+                    <p>
+                      Packaging, loading and unloading products
+                    </p>
+                  </div>
                 </div>
               </li>
             </ul>
