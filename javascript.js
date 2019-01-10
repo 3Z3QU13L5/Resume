@@ -5,6 +5,7 @@ var navBarDownloadCV = document.getElementsByClassName("navBar__CVbtn")[0];
 var professionalSection = document.getElementById("professional");
 var homeDownloadCV = document.getElementsByClassName("home__downloadCV")[0];
 var SideBar = document.getElementById("navBar");
+var porcentageBars = document.getElementsByClassName("professional__percentBar");
 var navBarScrolled = false;
 
 /* FUNCTIIONS */
@@ -74,6 +75,20 @@ function updateSideBar () {
     }
 }
 
+/* Professional Skills Section */
+
+function barPorcentagesLoad () {
+    Array.from(porcentageBars).forEach(porcentageBar => {
+        var widthBar = (parseInt(porcentageBar.textContent.substr(0, porcentageBar.textContent.length-1)) - 20).toString();
+        var widthBarStr = "calc(" + widthBar + "vw)";
+        if (porcentageBar.style.width != widthBarStr){
+            if ((porcentageBar.getBoundingClientRect().bottom) < window.innerHeight){
+                porcentageBar.style.width = "calc("+porcentageBar.textContent.substr(0, porcentageBar.textContent.length-1)+"vw - 20vw";
+            }
+        }        
+    });
+}
+
 
 /* EVENTLISTENER */
 
@@ -81,3 +96,6 @@ slideEventListener();
 
 window.addEventListener("resize", slideEventListener);
 window.addEventListener("resize", updateSideBar);
+
+barPorcentagesLoad();
+document.addEventListener("scroll", barPorcentagesLoad);
