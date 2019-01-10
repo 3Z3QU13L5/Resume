@@ -330,11 +330,12 @@ ul {
 .experince__line {
   background-color: var(--light_secondary);
   border-radius: 15px;
-  height: 107vh;
+  height: 0;
   left: 50%;
   position: absolute;
   top: 28px;
   transform: translateX(-50%);
+  transition: 1.5s;
   width: 3.8px;
 }
 

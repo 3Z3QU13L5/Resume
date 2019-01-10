@@ -6,11 +6,13 @@ var professionalSection = document.getElementById("professional");
 var homeDownloadCV = document.getElementsByClassName("home__downloadCV")[0];
 var SideBar = document.getElementById("navBar");
 var porcentageBars = document.getElementsByClassName("professional__percentBar");
+var verticalLine = document.getElementsByClassName("experince__line")[0];
+var vectorsPoints = document.getElementsByClassName("experince__point");
 var navBarScrolled = false;
 
 /* FUNCTIIONS */
 
-/*General Functions*/
+/* General Functions */
 function detectmob() { 
     if( navigator.userAgent.match(/Android/i)
     || navigator.userAgent.match(/webOS/i)
@@ -26,7 +28,7 @@ function detectmob() {
         return false;
     }
 }
-/*Navigation Functions*/
+/* Navigation Functions */
 function navBarSlide() {
     if (document.documentElement.scrollTop >= (homeDownloadCV.offsetTop + homeDownloadCV.clientHeight) && !navBarScrolled) {
         navBarScrolled = true;
@@ -70,7 +72,8 @@ function slideEventListener() {
 function updateSideBar () {
     if (window.innerWidth <= 768) {
         closeNav();
-    } else {
+    } 
+    else {
         navBarSlide();
     }
 }
@@ -89,6 +92,14 @@ function barPorcentagesLoad () {
     });
 }
 
+/* Experience Section */
+
+function nextfunction(){
+    if(!detectmob() || window.innerWidth > 768){
+        var heightLine = (vectorsPoints[vectorsPoints.length-1].offsetTop - vectorsPoints[0].offsetTop);
+        verticalLine.style.height = (heightLine.toString() + "px");
+    }
+}
 
 /* EVENTLISTENER */
 
@@ -99,3 +110,5 @@ window.addEventListener("resize", updateSideBar);
 
 barPorcentagesLoad();
 document.addEventListener("scroll", barPorcentagesLoad);
+
+document.addEventListener("scroll", nextfunction);
