@@ -230,7 +230,7 @@ ul {
 }
 
 .network__icon{
-  width: calc(0.6rem + 1.2vw + 1.6vh);
+  width: calc(0.6rem + 0.2vw + 1.6vh);
 }
 
 .network__icon > img {
@@ -271,6 +271,29 @@ input {
 textarea {
   font-size: 1rem;
   width: 85%;
+}
+
+@media only screen and (max-width: 1366px)  {
+  
+  #contact {
+    height: calc(30rem + 20vh + 20vw);
+  }
+
+  .contact__elementBackground {
+    left: 8%;
+    top:  5%;
+    transform: none;
+    width: 80%;
+  }
+
+  .contact__formPhone, .contact__formSubject {
+    width: unset !important;
+  }
+  
+  form {
+    display: block;
+  }
+
 }
 
 @media only screen and (max-width: 1024px) and (min-height: 768px){
@@ -435,14 +458,17 @@ form > div {
   }
 
   .contact__elementBackground {
-    left: 4%;
+    left: 8%;
     top:  5%;
+    transform: none;
     width: 80%;
   }
 
   .contact__formPhone, .contact__formSubject {
-    width: unset;
-  } 
-
+    width: unset !important;
+  }
   
+  form {
+    display: block;
+  }
 }
