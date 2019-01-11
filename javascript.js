@@ -8,6 +8,8 @@ var SideBar = document.getElementById("navBar");
 var porcentageBars = document.getElementsByClassName("professional__percentBar");
 var verticalLine = document.getElementsByClassName("experince__line")[0];
 var vectorsPoints = document.getElementsByClassName("experince__point");
+var flipButton = document.getElementsByClassName("flip__btn");
+var awardsSection = document.getElementById("awardsInterest");
 var navBarScrolled = false;
 
 /* FUNCTIIONS */
@@ -96,8 +98,26 @@ function barPorcentagesLoad () {
 
 function nextfunction(){
     if(!detectmob() || window.innerWidth > 768){
-        var heightLine = (vectorsPoints[vectorsPoints.length-1].offsetTop - vectorsPoints[0].offsetTop);
-        verticalLine.style.height = (heightLine.toString() + "px");
+        if(vectorsPoints[1].getBoundingClientRect().top < window.innerHeight){
+            var heightLine = (vectorsPoints[vectorsPoints.length-1].offsetTop - vectorsPoints[0].offsetTop);
+            verticalLine.style.height = (heightLine.toString() + "px");
+        }
+    }
+}
+
+/* Awards & Interest Section */
+
+function flipList() {
+    if(awardsSection.classList.contains("flip-vertical-right")){
+        awardsSection.classList.remove("flip-vertical-right");
+        awardsSection.classList.add("flip-vertical-left");
+    }
+    else if (awardsSection.classList.contains("flip-vertical-left")) {
+        awardsSection.classList.remove("flip-vertical-left");
+        awardsSection.classList.add("flip-vertical-right");
+    }
+    else {
+        awardsSection.classList.add("flip-vertical-right");
     }
 }
 
