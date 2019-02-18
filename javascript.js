@@ -77,7 +77,7 @@ function updateSideBar () {
 
 /* Professional Skills Section */
 
-function barPorcentagesLoad () {
+function loadingBarPorcentages () {
     Array.from(porcentageBars).forEach(porcentageBar => {
         var widthBar = (parseInt(porcentageBar.textContent.substr(0, porcentageBar.textContent.length-1)) - 20).toString();
         var widthBarStr = "calc(" + widthBar + "vw)";
@@ -123,7 +123,7 @@ slideEventListener();
 window.addEventListener("resize", slideEventListener);
 window.addEventListener("resize", updateSideBar);
 
-barPorcentagesLoad();
-document.addEventListener("scroll", barPorcentagesLoad);
+loadingBarPorcentages();
+document.addEventListener("scroll", loadingBarPorcentages);
 
 document.addEventListener("scroll", movingExperienceLine);
