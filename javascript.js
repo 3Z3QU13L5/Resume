@@ -15,15 +15,8 @@ var navBarScrolled = false;
 /* FUNCTIIONS */
 
 /* General Functions */
-function detectmob() { 
-    if( navigator.userAgent.match(/Android/i)
-    || navigator.userAgent.match(/webOS/i)
-    || navigator.userAgent.match(/iPhone/i)
-    || navigator.userAgent.match(/iPad/i)
-    || navigator.userAgent.match(/iPod/i)
-    || navigator.userAgent.match(/BlackBerry/i)
-    || navigator.userAgent.match(/Windows Phone/i)
-    ){
+function detectMob() { 
+    if( navigator.userAgent.match(/Android/i||/webOS/i||/iPhone/i||/iPad/i||/iPod/i||/BlackBerry/i||/Windows Phone/i)){
         return true;
     } 
     else {
@@ -41,7 +34,6 @@ function navBarSlide() {
         addNavClasses(); 
     }
 }
-
 function removeNavClasses () {
     navBarProfilePic.classList.remove("navBar__profilePic--offview");
     navBarDownloadCV.classList.remove("navBar__CVbtn--offview");
@@ -63,7 +55,7 @@ function closeNav() {
 }
 
 function slideEventListener() {
-    if (!detectmob() || window.innerWidth > 768) {
+    if (!detectMob() || window.innerWidth > 768) {
         document.addEventListener("scroll", navBarSlide);
     } 
     else {
@@ -97,7 +89,7 @@ function barPorcentagesLoad () {
 /* Experience Section */
 
 function nextfunction(){
-    if(!detectmob() || window.innerWidth > 768){
+    if(!detectMob() || window.innerWidth > 768){
         if(vectorsPoints[1].getBoundingClientRect().top < window.innerHeight){
             var heightLine = (vectorsPoints[vectorsPoints.length-1].offsetTop - vectorsPoints[0].offsetTop);
             verticalLine.style.height = (heightLine.toString() + "px");
