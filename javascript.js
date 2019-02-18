@@ -12,6 +12,8 @@ var flipButton = document.getElementsByClassName("flip__btn");
 var awardsSection = document.getElementById("awardsInterest");
 var navBarScrolled = false;
 
+
+
 /* FUNCTIIONS */
 
 /* General Functions */
@@ -25,11 +27,12 @@ function detectMob() {
 }
 /* Navigation Functions */
 function navBarSlide() {
-    if (document.documentElement.scrollTop >= (homeDownloadCV.offsetTop + homeDownloadCV.clientHeight) && !navBarScrolled) {
+    const hasScrolled = document.documentElement.scrollTop >= (homeDownloadCV.offsetTop + homeDownloadCV.clientHeight);
+    if (hasScrolled && !navBarScrolled) {
         navBarScrolled = true;
         removeNavClasses();
     }
-    if (document.documentElement.scrollTop < (homeDownloadCV.offsetTop + homeDownloadCV.clientHeight) && navBarScrolled) {
+    if (!hasScrolled && navBarScrolled) {
         navBarScrolled = false;
         addNavClasses(); 
     }
