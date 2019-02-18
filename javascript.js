@@ -5,7 +5,7 @@ var navBarDownloadCV = document.getElementsByClassName("navBar__CVbtn")[0];
 var professionalSection = document.getElementById("professional");
 var homeDownloadCV = document.getElementsByClassName("home__downloadCV")[0];
 var SideBar = document.getElementById("navBar");
-var porcentageBars = document.getElementsByClassName("professional__percentBar");
+var percentageBars = document.getElementsByClassName("professional__percentBar");
 var verticalLine = document.getElementsByClassName("experince__line")[0];
 var vectorsPoints = document.getElementsByClassName("experince__point");
 var flipButton = document.getElementsByClassName("flip__btn");
@@ -77,13 +77,13 @@ function updateSideBar () {
 
 /* Professional Skills Section */
 
-function loadingBarPorcentages () {
-    Array.from(porcentageBars).forEach(porcentageBar => {
-        var widthBar = (parseInt(porcentageBar.textContent.substr(0, porcentageBar.textContent.length-1)) - 20).toString();
+function loadingBarPercentages () {
+    Array.from(percentageBars).forEach(percentageBar => {
+        var widthBar = (parseInt(percentageBar.textContent.substr(0, percentageBar.textContent.length-1)) - 20).toString();
         var widthBarStr = "calc(" + widthBar + "vw)";
-        if (porcentageBar.style.width != widthBarStr){
-            if ((porcentageBar.getBoundingClientRect().bottom) < window.innerHeight){
-                porcentageBar.style.width = "calc("+porcentageBar.textContent.substr(0, porcentageBar.textContent.length-1)+"vw - 20vw";
+        if (percentageBar.style.width != widthBarStr){
+            if ((percentageBar.getBoundingClientRect().bottom) < window.innerHeight){
+                percentageBar.style.width = "calc("+percentageBar.textContent.substr(0, percentageBar.textContent.length-1)+"vw - 20vw";
             }
         }        
     });
@@ -123,7 +123,7 @@ slideEventListener();
 window.addEventListener("resize", slideEventListener);
 window.addEventListener("resize", updateSideBar);
 
-loadingBarPorcentages();
-document.addEventListener("scroll", loadingBarPorcentages);
+loadingBarPercentages();
+document.addEventListener("scroll", loadingBarPercentages);
 
 document.addEventListener("scroll", movingExperienceLine);
