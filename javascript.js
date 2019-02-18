@@ -25,6 +25,11 @@ function detectMob() {
         return false;
     }
 }
+
+function isNotMobile() {
+    return !detectMob() || window.innerWidth > 768;
+}
+
 /* Navigation Functions */
 function navBarSlide() {
     const hasScrolled = document.documentElement.scrollTop >= (homeDownloadCV.offsetTop + homeDownloadCV.clientHeight);
@@ -58,7 +63,7 @@ function closeNav() {
 }
 
 function slideEventListener() {
-    if (!detectMob() || window.innerWidth > 768) {
+    if (isNotMobile()) {
         document.addEventListener("scroll", navBarSlide);
     } 
     else {
@@ -67,12 +72,7 @@ function slideEventListener() {
 }
 
 function updateSideBar () {
-    if (window.innerWidth <= 768) {
-        closeNav();
-    } 
-    else {
-        navBarSlide();
-    }
+    window.innerWidth <= 768 ? closeNav() : navBarSlide();
 }
 
 /* Professional Skills Section */
@@ -91,8 +91,8 @@ function barPorcentagesLoad () {
 
 /* Experience Section */
 
-function nextfunction(){
-    if(!detectMob() || window.innerWidth > 768){
+function movingExperienceLine(){
+    if(isNotMobile()){
         if(vectorsPoints[1].getBoundingClientRect().top < window.innerHeight){
             var heightLine = (vectorsPoints[vectorsPoints.length-1].offsetTop - vectorsPoints[0].offsetTop);
             verticalLine.style.height = (heightLine.toString() + "px");
@@ -126,4 +126,4 @@ window.addEventListener("resize", updateSideBar);
 barPorcentagesLoad();
 document.addEventListener("scroll", barPorcentagesLoad);
 
-document.addEventListener("scroll", nextfunction);
+document.addEventListener("scroll", movingExperienceLine);
