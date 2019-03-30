@@ -79,15 +79,19 @@ function updateSideBar () {
 
 function loadingBarPercentages () {
     Array.from(percentageBars).forEach(percentageBar => {
-        var widthBar = (parseInt(percentageBar.textContent.substr(0, percentageBar.textContent.length-1)) - 20).toString();
-        var widthBarStr = "calc(" + widthBar + "vw)";
-        if (percentageBar.style.width != widthBarStr){
-            if ((percentageBar.getBoundingClientRect().bottom) < window.innerHeight){
-                percentageBar.style.width = "calc("+percentageBar.textContent.substr(0, percentageBar.textContent.length-1)+"vw - 20vw";
-            }
-        }        
+        setBarPercentagesWidth (percentageBar);      
     });
 }
+
+function setBarPercentagesWidth (percentageBar) {
+    var widthBar = (parseInt(percentageBar.textContent.substr(0, percentageBar.textContent.length-1)) - 20).toString();
+    var widthBarStr = "calc(" + widthBar + "vw)";
+    var  isOnScreen = percentageBar.style.width != widthBarStr && (percentageBar.getBoundingClientRect().bottom) < window.innerHeight
+    if ( isOnScreen ){
+        percentageBar.style.width = "calc("+percentageBar.textContent.substr(0, percentageBar.textContent.length-1)+"vw - 20vw";
+    } 
+}
+
 
 /* Experience Section */
 
